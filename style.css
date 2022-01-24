@@ -1,0 +1,64 @@
+:root {
+    --grey0:#2e353d;
+    --grey1:#353c45;
+    --grey2:#444b53;
+    --grey3:#686c73;
+    --grey4:#8c939c;
+    --grey5:#c2c8cf;
+    --grey6:#eeeeee;
+    --grey7:#ffffff;
+    --yellow1: #ddbd04;
+    --yellow2: #f39212;
+    --orange: #d86e0b;
+    --red0: #da626c;
+    --red1: #f04150;
+    --red2: #a71919;
+    --blue1: #1963a8;
+    --blue2: #082a50;
+    --blue3: #061629;
+    --green1: #32e67d;
+    --green2: #157c74;
+    --purple1: #9c27b0;
+    --purple2: #5727b0;
+    --slate1: #95a6bf;
+    --slate2: #6e829a;
+}
+
+body {
+    height: 160vh;
+    background-image: linear-gradient(180deg, #000, var(--blue3));
+    font-family: Helvetica;
+}
+
+.container { 
+    display: grid;
+    grid-template-columns: 10vw 50vw 35vw;
+    grid-template-rows: 15vh 40vh 40vh;
+    gap: 1vh 1vw;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "pnl-logo pnl-menu pnl-options"
+        "pnl-vid-1 pnl-vid-1 pnl-notes"
+        "pnl-vid-2 pnl-vid-2 pnl-notes";
+}
+
+.panel {
+    position: relative;
+    background-image: linear-gradient(180deg, var(--grey2), var(--grey0));
+    /*background-image: linear-gradient(180deg, var(--grey7), var(--grey6));*/
+    border-radius: 0.75vh;
+    gap: 0.5vh 0.5vw;
+    padding: 1vh;
+  }
+
+.pnl-vid-1 { grid-area: pnl-vid-1; }
+
+.pnl-vid-2 { grid-area: pnl-vid-2; }
+
+.pnl-menu { grid-area: pnl-menu; }
+
+.pnl-logo { grid-area: pnl-logo; }
+
+.pnl-options { grid-area: pnl-options; }
+
+.pnl-notes { grid-area: pnl-notes; }
