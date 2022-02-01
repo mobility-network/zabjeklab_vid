@@ -14,12 +14,12 @@
 <body>
     <div class="container">
         <div class="pnl-vid-1 panel">
-            <video class="video-js" data-setup='{"controls": true, "autoplay": false, "preload": "auto", "fill": true, "playbackRates": [0.25, 0.5, 1, 1.5]}'>
+            <video id="vid-1" class="video-js" data-setup='{"controls": true, "autoplay": false, "preload": "auto", "fill": true, "playbackRates": [0.25, 0.5, 1, 1.5]}'>
                 <source src="gait_init_ant.mp4" type="video/mp4">
             </video>
         </div>
         <div class="pnl-vid-2 panel">
-            <video class="video-js" data-setup='{"controls": true, "autoplay": false, "preload": "auto", "fill": true, "playbackRates": [0.25, 0.5, 1, 1.5]}'>
+            <video id="vid-2" class="video-js" data-setup='{"controls": true, "autoplay": false, "preload": "auto", "fill": true, "playbackRates": [0.25, 0.5, 1, 1.5]}'>
                 <source src="gait_init_lat.mp4" type="video/mp4">
             </video>
         </div>
@@ -27,15 +27,25 @@
             Menu
         </div>
         <div class="pnl-logo panel">
-            Logo
+            <img src="uoftlogo.png" alt="Logo">
         </div>
         <div class="pnl-options panel">
             Options
         </div>
         <div class="pnl-notes panel">
-            Notes
+            <form action="/action_page.php">
+                <label for="fnote">Note:</label><br>
+                <input type="text" id="fnote" name="fnote" value="">
+            </form>
+            <button id="btn-addnote">Add Note</button>
+            <button id="btn-reset">Reset</button>
+
+            <table class="tbl-note" id="tbl-note">
+                <tr>
+                </tr>
+            </table>
         </div>
     </div>
 </body>
-
+<script src="main.js"></script>
 </html>
