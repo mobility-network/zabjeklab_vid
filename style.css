@@ -48,6 +48,7 @@ img {
 }
 
 .panel {
+    text-align: center;
     position: relative;
     background-image: linear-gradient(180deg, var(--grey2), var(--grey0));
     /*background-image: linear-gradient(180deg, var(--grey7), var(--grey6));*/
@@ -96,4 +97,8 @@ button {
 #fnote {
     width: 80%;
     font-size: 3vh;
+}
+
+.vid {
+    height: 100%;
 }

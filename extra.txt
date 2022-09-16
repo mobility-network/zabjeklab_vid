@@ -1,0 +1,35 @@
+    <div class="container">
+        <div class="pnl-vid-1 panel">
+            <video id="vid-1" class="vid" controls>
+                <source id="v1-src" src="gait_init_ant.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="pnl-vid-2 panel">
+            <video id="vid-2" class="vid" controls>
+                <source id="v2-src" src="gait_init_lat.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="pnl-menu panel">
+            Menu
+            <input type='file' id="input-tag"/>
+        </div>
+        <div class="pnl-logo panel">
+            <img src="uoftlogo.png" alt="Logo">
+        </div>
+        <div class="pnl-options panel">
+            Options
+        </div>
+        <div class="pnl-notes panel">
+            <form action="/action_page.php">
+                <label for="fnote">Note:</label><br>
+                <input type="text" id="fnote" name="fnote" value="">
+            </form>
+            <button id="btn-addnote">Add Note</button>
+            <button id="btn-reset">Reset</button>
+
+            <table class="tbl-note" id="tbl-note">
+                <tr>
+                </tr>
+            </table>
+        </div>
+    </div>
