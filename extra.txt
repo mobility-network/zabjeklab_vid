@@ -1,17 +1,18 @@
-    <div class="container">
+   <div class="container">
         <div class="pnl-vid-1 panel">
-            <video id="vid-1" class="vid" controls>
-                <source id="v1-src" src="gait_init_ant.mp4" type="video/mp4">
+            <video id="vid-1" class="video-js"
+                data-setup='{"controls": true, "autoplay": false, "preload": "auto", "fill": true, "playbackRates": [0.25, 0.5, 1, 1.5]}'>
+                <source src="sprint_1.mp4" type="video/mp4">
             </video>
         </div>
         <div class="pnl-vid-2 panel">
-            <video id="vid-2" class="vid" controls>
-                <source id="v2-src" src="gait_init_lat.mp4" type="video/mp4">
+            <video id="vid-2" class="video-js"
+                data-setup='{"controls": true, "autoplay": false, "preload": "auto", "fill": true, "playbackRates": [0.25, 0.5, 1, 1.5]}'>
+                <source src="sprint_para.mp4" type="video/mp4">
             </video>
         </div>
         <div class="pnl-menu panel">
             Menu
-            <input type='file' id="input-tag"/>
         </div>
         <div class="pnl-logo panel">
             <img src="uoftlogo.png" alt="Logo">
